@@ -2,20 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta lang="de">
+    <!-- Responsiv Abfrage -->
+    <link rel="stylesheet" href="../assets/css/responsiv.css">
 </head>
 
 <body>
     <!-- NavBar , auslagern da für die restlichen Seiten == -->
     <div class="navBar">
-        <a href="../" >Home</a>
-        <a href="anmelden.php" >Events</a>
-        <a href="produkte.php" >Produkte</a>
-        <a href="warenkorp.php" >Warenkorp</a>
-        <a href="kontackt.php" >Kontackt</a>
-        <a href="anmelden.php" >Anmelden</a>
-        <a href="regestrieren.php" >Regestrieren</a>
-        <a href="impressum.php" >Impressum</a>
+        <?php
+            include "../helper/navBar.php"
+        ?>
     </div>
+
+
+    
 
 </body>
 
