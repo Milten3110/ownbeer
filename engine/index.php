@@ -5,6 +5,7 @@
         <meta lang="de">
         <!-- Responsiv Abfrage -->
         <link rel="stylesheet" href="assets/css/responsiv.css">
+        <title>Wilkommen bei OwnBeer</title>
     </head>
 
     <body>

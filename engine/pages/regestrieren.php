@@ -4,6 +4,7 @@
     <meta lang="de">
     <!-- Responsiv -->
     <link rel="stylesheet" href="../assets/css/responsiv.css">
+    <title>Regestrieren</title>
 </head>
 
 
