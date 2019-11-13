@@ -2,6 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta lang="de">
+    <!-- Responsiv -->
+    <link rel="stylesheet" href="../assets/css/responsiv.css">
 </head>
 
 
@@ -13,11 +15,11 @@
         ?>
     </div>
 
-    
-    <form action="">
+
+    <form action="../helper/_regest.php" method="post">
         <!-- Benötigte Informationen zum Regestrieren-->
         <label>Benutzernamen</label>
-        <input type="text" placeholder="benutzer">
+        <input name="userName" type="text" placeholder="0">
 
         <label>Passwort
         <input type="password" placeholder="passwort">
@@ -33,6 +35,8 @@
             <input type="text" placeholder="email">
         </label>
 
+      <br> <br> <br>
+
         <!-- Persönliche Informationen -->
         <label>Vornamen
             <input type="text" placeholder="vornamen">
@@ -41,6 +45,8 @@
         <label>Nachnamen
             <input type="text" placeholder="rufname">
         </label>
+
+        <br> <br> <br>
 
         <!-- Geschlecht -->
         <label>Geschlecht
@@ -51,12 +57,35 @@
             </select>
         </label>
 
+        <br> <br> <br>
         <!-- Produktvorlieben -->
-        <label>Vorlieben
-            <input type="checkbox">
-        </label>
+        <div>
+            <Span>Vorlieben</Span>
+
+            <br>
+            
+            <label>
+                <input type="checkbox"> Starkbier
+                <input type="checkbox"> Weißbier
+                <input type="checkbox"> Kellerbier
+            </label>
+            
+            <label>
+                <input type="checkbox"> Fassbier
+                <input type="checkbox"> Pils
+                <input type="checkbox"> Dunkelbier
+            </lable>
+                
+            <label>
+                <input type="checkbox"> Weizenbier
+                <input type="checkbox"> Festbier
+                <input type="checkbox"> Mixery Bier
+            </label>
+        </div>
 
 
+        <!-- Regestrierung abschicken -->
+        <input type="submit">
     </form>
 </body>
 </html>
