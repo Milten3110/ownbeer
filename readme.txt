@@ -1,4 +1,4 @@
-Projekt Status: 1% 
+Projekt Status: 2% 
 
 Webseiten Name : "ownbeer"
 
@@ -53,10 +53,10 @@ Daten in DB schreiben 								[]
 Suche durch PHP min 3 parameter
 
 Dateneingabe
-über formular daten einfügen / schreiben 					[]
+über formular daten einfügen / schreiben 					[-InBearbeitung]
 dynamische zuweisung der formularelemente ?
 Min 1 Formular soll mehrseitig sein und über Session weitergeleitet werden 	[]
-Prüfung auf Vollständigkeit und Plausibilität		 			[]
+Prüfung auf Vollständigkeit und Plausibilität		 			[-InBearbeitung]
 		
 ###################
 Zielplatzform

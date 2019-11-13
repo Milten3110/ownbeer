@@ -23,38 +23,38 @@
         <input name="userName" type="text" placeholder="0">
 
         <label>Passwort
-        <input type="password" placeholder="passwort">
+            <input type="password" name="userPw1" placeholder="passwort">
         </label>
         <label>Passwort wiederholen
-            <input type="password" placeholder="passwort">
+            <input type="password" name="userPw2" placeholder="passwort">
         </label>
 
         <label>Email Adresse
-            <input type="text" placeholder="email">
+            <input type="text" name="userEmail1" placeholder="email">
         </label>
         <label>Email Adresse wiederholen
-            <input type="text" placeholder="email">
+            <input type="text" name="userEmail2" placeholder="email">
         </label>
 
       <br> <br> <br>
 
         <!-- Persönliche Informationen -->
         <label>Vornamen
-            <input type="text" placeholder="vornamen">
+            <input type="text" name="vorname" placeholder="vornamen">
         </label>
 
         <label>Nachnamen
-            <input type="text" placeholder="rufname">
+            <input type="text" name="nachname" placeholder="rufname">
         </label>
 
         <br> <br> <br>
 
         <!-- Geschlecht -->
         <label>Geschlecht
-            <select>
-                <option value="">Neutral</option>
-                <option value="">Männlich</option>
-                <option value="">Weiblich</option>
+            <select name="geschlecht">
+                <option value="1"     >Neutral</option>
+                <option value="1"    >Männlich</option>
+                <option value="1"    >Weiblich</option>
             </select>
         </label>
 
@@ -66,21 +66,35 @@
             <br>
             
             <label>
-                <input type="checkbox"> Starkbier
-                <input type="checkbox"> Weißbier
-                <input type="checkbox"> Kellerbier
+                <input type="checkbox" name="stark"> Starkbier
+            </label>
+            <label>
+                <input type="checkbox" name="weiss"> Weißbier
+            </label>
+                <input type="checkbox" name="keller"> Kellerbier
             </label>
             
             <label>
-                <input type="checkbox"> Fassbier
-                <input type="checkbox"> Pils
-                <input type="checkbox"> Dunkelbier
+                <input type="checkbox" name="fass"> Fassbier
+            </label>
+            
+            <label>
+                <input type="checkbox" name="pils"> Pils
+            </label>
+            <label>
+                <input type="checkbox" name="dunkel"> Dunkelbier
             </lable>
                 
             <label>
-                <input type="checkbox"> Weizenbier
-                <input type="checkbox"> Festbier
-                <input type="checkbox"> Mixery Bier
+                <input type="checkbox" name="weizen"> Weizenbier
+            </label>
+
+            <label>        
+                <input type="checkbox" name="fest"> Festbier
+            </label>
+            
+            <label>       
+                <input type="checkbox" name="mixery"> Mixery Bier
             </label>
         </div>
 
