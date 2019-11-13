@@ -1,0 +1,13 @@
+/*Mobile-Responsiv*/
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/*Desktop-Responsiv*/
+@media screen and (min-width: 993px) {
+    body {
+        background-color: yellow;
+    }
+}
