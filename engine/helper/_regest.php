@@ -115,9 +115,28 @@
                         }
                     }
 
-
+                    //  Vornamen und Nachnamen Prüfen
+                    for($index = 0; $index < strlen($vorname); ++$index){
+                        if(in_array(strtolower($vorname[$index]),$erlaubteKleinBuchstaben)){
+                            echo 'vorname[index] true' . "<br>";
+                        }
+                        else{
+                            die('Unzulässige Zeichen bei Vornamen!');
+                        }
+                    }
+                    for($index = 0; $index < strlen($nachname); ++$index){
+                        if(in_array(strtolower($nachname[$index]),$erlaubteKleinBuchstaben)){
+                            echo 'nachname[index] true' . "<br>";
+                        }
+                        else{
+                            die('Unzulässige Zeichen bei Nachnamen!');
+                        }
+                    }
 
                     //  TODO : daten in db schreiben 
+
+                    echo "<br> <br>" . 'JETZ WIRD IN DIE DB GESCHRIEBEN !';
+                    
                 }
                 else{
                     echo 'Die Emails stimmen nicht überein !';
