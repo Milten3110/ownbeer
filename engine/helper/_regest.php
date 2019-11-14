@@ -1,6 +1,6 @@
 <!-- Php Funktionen -->
 <?php
-    $userNme    =   $_POST['userName'];
+    $userName    =   $_POST['userName'];
     $userPw1    =   $_POST['userPw1'];
     $userPw2    =   $_POST['userPw2'];
     $userEmail1 =   $_POST['userEmail1'];
@@ -26,7 +26,32 @@
     //  Validierung min 6 Zeichen
     //  [a-zA-z]+[0-9]
     //  TODO : Reulären ausdruck zur Validierung
-    if(strlen($userNme) >= 6){    
+    if(strlen($userName) >= 6 && strlen($userName) <= 18){
+
+        //  Pw länge Prüfen
+        if(strlen($userPw1) >= 6 && strlen($userPw1) <= 18){
+            
+            //  ist pw gleich ?
+            if($userPw1 === $userPw2){
+                
+                //  ist email gleich ?
+                if($userEmail1 === $userEmail2){
+
+                }
+                else{
+                    echo 'Die Emails stimmen nicht überein !';
+                }
+
+            }
+            else{
+                echo "Die Passwörter stimmen nicht überein !";
+            }
+
+        }
+        else{
+            echo 'Das Passwort ist zu kurz oder zu lang, max 18 zeichen und min 6.';
+        }
+
     }
     else{
         echo 'Der Eingegebene Benutzername ist zu kurz';

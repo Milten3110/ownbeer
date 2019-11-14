@@ -7,6 +7,7 @@ Anforderungen:
 mind. 6 Haupseiten 								[]
 min 3 Unterseiten 								[]
 Impressum 									[]
+404 Seite									[x]			// datei muss in apache/error/error_404.php gelegt werden
 
 Inhalte:
 Bilder 										[]
@@ -72,7 +73,7 @@ Datenbank: Xampp-server 7.1 oder neue , mariadb/mysql
 ############################
 Anforderungen 
 
-Benutzername min 6 zeichen 	([a-zA-Z]+[0-9]*){6,18}				
+Benutzername min 6,max18	([a-zA-Z]+[0-9]*){6,18}				
 Passwort min 6 Zeichen aus 	([a-zA-Z]+[0-9]*){6,18}
 Email min 7 zeichen "a@ou.de", 	[a-zA-Z]+@([a-z]{2,5}).[a-z]{2.7}
 Name & Vorname nur 		[a-z-A-Z]

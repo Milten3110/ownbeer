@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        
+    
     <!-- NavBar -->
     <div class="navBar">
         <a href="./"                        >Home</a>
