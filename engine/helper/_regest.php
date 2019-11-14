@@ -22,11 +22,49 @@
     $mixerybier =   isset($_POST['mixery']) ? 1 : 0;
 
 
+    $erlaubteKleinBuchstaben = 
+                [
+                    'a','b','c','d','e','f','g','h','i','j','k','l'
+                    ,'m','n','o','p','q','r','s','t','u','v','w','x','y','z'
+                ];
+    $erlaubteGrossBuchstaben = 
+                [
+                    'A','B','C','D','E','F','G','H','I','J','K','L'
+                    ,'M','N','D','P','Q','R','S','T','U','V','w','X','Y','Z'
+                ];
+    $erlaubteZahlen = 
+                [
+                    '0','1','2','3','4','5','6','7','8','9'
+                ];
+    $erlaubtesSonderzeichen = '@';
+
 
     //  Validierung min 6 Zeichen
     //  [a-zA-z]+[0-9]
     //  TODO : Reulären ausdruck zur Validierung
     if(strlen($userName) >= 6 && strlen($userName) <= 18){
+
+        // Parsen userName auf erlaubte werte
+        for($index = 0; $index < strlen($userName); ++ $index){
+
+            // FlaMexRx3310
+            if(in_array($userName[$index],$erlaubteKleinBuchstaben)){
+                echo 'klein' . "<br>";
+            }
+
+            else if(in_array($userName[$index],$erlaubteGrossBuchstaben)){
+                echo 'gross' . "<br>";
+            }
+
+            
+            else if(in_array($userName[$index],$erlaubteZahlen)){
+                echo 'number' . "<br>";
+            }
+
+            else{
+                die('Unzulässige Zeichen im Benutzernamen !');
+            }
+        }
 
         //  Pw länge Prüfen
         if(strlen($userPw1) >= 6 && strlen($userPw1) <= 18){
@@ -37,6 +75,7 @@
                 //  ist email gleich ?
                 if($userEmail1 === $userEmail2){
 
+                    //  TODO : daten in db schreiben 
                 }
                 else{
                     echo 'Die Emails stimmen nicht überein !';
