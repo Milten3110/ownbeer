@@ -1,5 +1,10 @@
 <?php
+    $username = $_POST['username'];
+    $userpw = $_POST['userpw'];
 
+
+    //  Validieren
+    //  siehe _reged.php
 ?>
 
 <!-- Zurück zum Anmeldeprozess führen-->
