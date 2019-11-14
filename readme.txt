@@ -7,7 +7,7 @@ Anforderungen:
 mind. 6 Haupseiten 								[]
 min 3 Unterseiten 								[]
 Impressum 									[]
-404 Seite									[x]			// datei muss in apache/error/error_404.php gelegt werden
+404 Seite									[x]			// datei muss in	apache/error/error_404.php gelegt werden
 
 Inhalte:
 Bilder 										[]
