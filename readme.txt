@@ -67,3 +67,12 @@ s < 992px 									[]
 m > 992px 									[]
 
 Datenbank: Xampp-server 7.1 oder neue , mariadb/mysql
+
+
+############################
+Anforderungen 
+
+Benutzername min 6 zeichen 	([a-zA-Z]+[0-9]*){6,18}				
+Passwort min 6 Zeichen aus 	([a-zA-Z]+[0-9]*){6,18}
+Email min 7 zeichen "a@ou.de", 	[a-zA-Z]+@([a-z]{2,5}).[a-z]{2.7}
+Name & Vorname nur 		[a-z-A-Z]
