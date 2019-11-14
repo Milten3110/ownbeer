@@ -36,18 +36,22 @@
                 [
                     '0','1','2','3','4','5','6','7','8','9'
                 ];
-    $erlaubtesSonderzeichen = '@';
+    $erlaubtesSonderzeichen = 
+                [
+                    '@','.'
+                ];
 
 
     //  Validierung min 6 Zeichen
     //  [a-zA-z]+[0-9]
-    //  TODO : Reulären ausdruck zur Validierung
+    //  TODO
+    //  Wiederholenden Code in eine Funktion schreiben mit Param des zu prüfenden Strings
     if(strlen($userName) >= 6 && strlen($userName) <= 18){
 
         // Parsen userName auf erlaubte werte
         for($index = 0; $index < strlen($userName); ++ $index){
 
-            // FlaMexRx3310
+            // TODO : echo off
             if(in_array($userName[$index],$erlaubteKleinBuchstaben)){
                 echo 'klein' . "<br>";
             }
@@ -72,28 +76,63 @@
             //  ist pw gleich ?
             if($userPw1 === $userPw2){
                 
+                // Parsen pw auf erlaubte werte
+                for($index = 0; $index < strlen($userPw1); ++ $index){
+                    // TODO : echo off
+                    if(in_array($userPw1[$index],$erlaubteKleinBuchstaben)){
+                        echo 'klein' . "<br>";
+                    }
+                    else if(in_array($userPw1[$index],$erlaubteGrossBuchstaben)){
+                        echo 'gross' . "<br>";
+                    }
+                    else if(in_array($userPw1[$index],$erlaubteZahlen)){
+                        echo 'number' . "<br>";
+                    }
+                    else{
+                        die('Unzulässige Zeichen im Password !');
+                    }
+                }
+                
                 //  ist email gleich ?
                 if($userEmail1 === $userEmail2){
+
+                    // Parsen email auf erlaubte werte
+                    for($index = 0; $index < strlen($userEmail1); ++ $index){
+                        // TODO : echo off
+                        if(in_array($userEmail1[$index],$erlaubteKleinBuchstaben)){
+                            echo 'klein' . "<br>";
+                        }
+                        else if(in_array($userEmail1[$index],$erlaubteGrossBuchstaben)){
+                            echo 'gross' . "<br>";
+                        }
+                        else if(in_array($userEmail1[$index],$erlaubteZahlen)){
+                            echo 'number' . "<br>";
+                        }
+                        else if(in_array($userEmail1[$index],$erlaubtesSonderzeichen)){
+                            echo 'sonderzeichen'. "<br>";                        }
+                        else{
+                            die('Unzulässige Zeichen in der Email !');
+                        }
+                    }
+
+
 
                     //  TODO : daten in db schreiben 
                 }
                 else{
                     echo 'Die Emails stimmen nicht überein !';
                 }
-
             }
             else{
                 echo "Die Passwörter stimmen nicht überein !";
             }
-
         }
         else{
             echo 'Das Passwort ist zu kurz oder zu lang, max 18 zeichen und min 6.';
         }
-
     }
     else{
-        echo 'Der Eingegebene Benutzername ist zu kurz';
+        echo 'Der Eingegebene Benutzername ist zu lang oder zu kurz!';
     }
 
     //  Passwörter erlauben 
