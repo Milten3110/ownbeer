@@ -14,7 +14,22 @@
         ?>
     </div>
 
+    <div>
+        <!-- Form Anmeldung, valid in _anmeld.php -->
+        <form action="../helper/_anmeld.php" method="post">
+            <label>
+                Benutzernamen:
+                <input type="text" placeholder="benutzernamen">
+            </label>
 
+            <label>
+                Password:
+                <input type="password">
+            </label>
+
+            <input type="submit" value="Anmelden">
+        </form>
+    </div>
     
 
 </body>
