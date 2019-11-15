@@ -19,12 +19,12 @@
         <form action="../helper/_anmeld.php" method="post">
             <label>
                 Benutzernamen:
-                <input type="text" placeholder="benutzernamen">
+                <input type="text" name="username" placeholder="benutzernamen">
             </label>
 
             <label>
                 Password:
-                <input type="password">
+                <input name ="userpw" type="password">
             </label>
 
             <input type="submit" value="Anmelden">
