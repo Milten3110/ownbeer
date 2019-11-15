@@ -17,7 +17,7 @@
         <a href=""                          >Produkte</a>
         <a href=""                          >Angebote</a>
         <a href=""                          >Warenkorp</a>
-        <a href=""                          >Kontackt</a>
+        <a href="./pages/kontackt.php"                          >Kontackt</a>
         <a href="./pages/anmelden.php"      >Anmelden</a>
         <a href="./pages/regestrieren.php"  >Regestrieren</a>
         <a href=""                          >Impressum</a>
