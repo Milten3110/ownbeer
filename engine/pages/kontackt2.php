@@ -1,3 +1,5 @@
+<!-- TODO -->
+<!-- Kontackt Mit Session über Mehrere Seiten validieren -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,7 +23,12 @@
         <form action="" method="post">
 
             <?php
-                echo 'Wie wünschen Sie Herr ' . $_POST['nachname'] . ' den Kontackt ?';
+                if(strlen($_POST['nachname']) > 0){
+                    echo 'Wie wünschen Sie Herr ' . $_POST['nachname'] . ' den Kontackt ?';
+                }
+                else{
+                    echo 'Einige angaben auf der Vorhergehenden Kontacktseite wurden nicht eingetragen !';
+                }
             ?>
 
             <label>

@@ -81,7 +81,16 @@ $erlaubtesSonderzeichen =
     ######################################################################################
     ######################################################################################
     ######################################################################################
+
+    include "./db_conn.php";
+    //insert
+    //$db->query("insert into benutzer (userName,userPw,email,shoppingcart,orders) values ('andy', 123, 'qqq@a.de', 1, 1)");
     
+    // abfrage
+    $temp = $db->query("select * from benutzer where userName='" . $username . "' and userPw='" . $userpw . "'");
+    echo var_dump($temp);
+    
+    //echo var_dump($rs);
 
 ?>
 
@@ -90,7 +99,7 @@ $erlaubtesSonderzeichen =
     <head>
         <meta charset="UTF-8">
         <meta lang="de">
-        <title>Regestrieren</title> 
+        <title>Anmelden</title> 
     </head>
     
     <body>

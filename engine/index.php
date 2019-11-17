@@ -24,5 +24,8 @@
     </div>
     
 
+    <?php
+        include "./helper/db_conn.php";
+    ?>
 </body>
 </html>
