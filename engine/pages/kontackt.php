@@ -7,8 +7,9 @@
         <link rel="stylesheet" href="../assets/css/responsiv.css">
 
         <?php
-        include_once "../helper/sessionStart.php"
+            include "../helper/sessionStart.php"
         ?>
+        
     </head>
 
     <body>

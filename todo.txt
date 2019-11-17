@@ -1,5 +1,5 @@
 #Sessions
-Sessions erstellen und Handeln		[]
-Session Anmeldung			[]
+Sessions erstellen und Handeln		[x]
+Session Anmeldung			[x]
 Session Kontackt 			[]
 

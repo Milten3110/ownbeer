@@ -1,7 +1,7 @@
 <html>
 <head>
     <?php
-        include_once "../helper/sessionStart.php"
+        include "../helper/sessionStart.php"
     ?>
     
     <meta charset="UTF-8">

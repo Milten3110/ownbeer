@@ -2,6 +2,7 @@
     $username = isset($_POST['username']) ? $_POST['username'] : 'null' ;
     $userpw = isset($_POST['userpw']) ? $_POST['userpw'] : 'null';
 
+    session_start();
 
 
     if(strlen($username) < 6 ||strlen($username) > 18){
@@ -91,10 +92,11 @@ $erlaubtesSonderzeichen =
     $temp = $temp->fetch_assoc();
 
     $_SESSION['userName'] = $temp['userName'];
-    echo 'Hallo ' . $_SESSION['userName'];
+    //echo 'Hallo ' . $_SESSION['userName'];
+    // navbar Nach dem zuweisen aufrufen !!!
+    // include_once "./navBar.php";
     
-    
-
+    header("Location: ../")
     //echo var_dump($rs);
 
 ?>

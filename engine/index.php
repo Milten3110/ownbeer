@@ -13,21 +13,12 @@
     
     <!-- NavBar -->
     <div class="navBar">
-        <a href="./"                        >Home</a>
-        <a href=""      >Events</a>
-        <a href=""                          >Produkte</a>
-        <a href=""                          >Angebote</a>
-        <a href=""                          >Warenkorp</a>
-        <a href="./pages/kontackt.php"                          >Kontackt</a>
-        <a href="./pages/anmelden.php"      >Anmelden</a>
-        <a href="./pages/regestrieren.php"  >Regestrieren</a>
-        <a href=""                          >Impressum</a>
+        <?php
+            include "./helper/sessionStart.php";
+            include "./helper/navBar.php";
+        ?>
     </div>
     
 
-    <?php
-        include_once "./helper/sessionStart.php";
-        include "./helper/db_conn.php";
-    ?>
 </body>
 </html>
