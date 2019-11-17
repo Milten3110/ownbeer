@@ -26,7 +26,7 @@
         if(isset($_SESSION['userName'])){
             echo "
                 <a href=''                        >Home</a>
-                <a href='./pages/events.php'        >Eventss</a>
+                <a href='./pages/events.php'        >Events</a>
                 <a href='./pages/produkte.php'      >Produkte</a>
                 <a href='./pages/angebote.php'      >Angebote</a>
                 <a href='./pages/warenkorp.php'     >Warenkorp</a>
@@ -39,7 +39,7 @@
         else{
             echo "
             <a href=''                        >Home</a>
-            <a href='./pages/events.php'        >Eventss</a>
+            <a href='./pages/events.php'        >Events</a>
             <a href='./pages/produkte.php'      >Produkte</a>
             <a href='./pages/angebote.php'      >Angebote</a>
             <a href='./pages/warenkorp.php'     >Warenkorp</a>
@@ -48,7 +48,6 @@
             <a href='./pages/regestrieren.php'  >Regestrieren</a>
             <a href=''                          >Impressum</a>
             ";
-            echo "<br> startseite";
         }
     }
 
@@ -66,6 +65,4 @@
         <a href='impressum.php'     >Impressum</a>
         ";
     }
-
-    //echo var_dump($_SESSION['userName']);
 ?>
