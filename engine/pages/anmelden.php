@@ -1,5 +1,9 @@
 <html>
 <head>
+    <?php
+        include_once "../helper/sessionStart.php"
+    ?>
+    
     <meta charset="UTF-8">
     <meta lang="de">
     <!-- Responsiv Abfrage -->

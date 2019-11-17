@@ -5,6 +5,10 @@
         <meta lang="de">
         <title>OwnBeer - Kontacktformular</title>
         <link rel="stylesheet" href="../assets/css/responsiv.css">
+
+        <?php
+        include_once "../helper/sessionStart.php"
+        ?>
     </head>
 
     <body>

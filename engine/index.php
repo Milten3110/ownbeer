@@ -6,6 +6,7 @@
         <!-- Responsiv Abfrage -->
         <link rel="stylesheet" href="assets/css/responsiv.css">
         <title>Wilkommen bei OwnBeer</title>
+
     </head>
 
     <body>
@@ -25,6 +26,7 @@
     
 
     <?php
+        include_once "./helper/sessionStart.php";
         include "./helper/db_conn.php";
     ?>
 </body>

@@ -88,8 +88,13 @@ $erlaubtesSonderzeichen =
     
     // abfrage
     $temp = $db->query("select * from benutzer where userName='" . $username . "' and userPw='" . $userpw . "'");
-    echo var_dump($temp);
+    $temp = $temp->fetch_assoc();
+
+    $_SESSION['userName'] = $temp['userName'];
+    echo 'Hallo ' . $_SESSION['userName'];
     
+    
+
     //echo var_dump($rs);
 
 ?>

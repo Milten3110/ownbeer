@@ -1,4 +1,4 @@
-Projekt Status: 5% 
+Projekt Status: 7% 
 
 Webseiten Name : "ownbeer"
 
@@ -30,9 +30,12 @@ Optional
 Animationen 									[]
 Stielangaben									[]
 
+#################
+CSS 20 %
+Responsiv Design								[]
 
 #################
-JS
+JS 20%
 
 Formulateingaben prüfen 							[]
 Auswhlfelder wernden durch AJAX vorab mit aktuellen Werten gefüllt 		[]
@@ -45,11 +48,11 @@ SQL-DB mit min 5 Tables 							[x]
 incl verknüpfung, min 3 ebenen 							[x-teilweilse]
 
 ###################
-PHP
+PHP 60%
 
 dynamischer Seitenaufbau 							[-InBearbeitung]
 häufige seiteninhalte in php auslagern und einbinden 				[-InBearbeitung]
-Daten aus DB lesen 								[-InBearbeitung]
+Daten aus DB lesen 								[x]
 Daten in DB schreiben 								[-InBearbeitung]
 Suche durch PHP min 3 parameter							[]
 

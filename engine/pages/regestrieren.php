@@ -5,6 +5,11 @@
     <!-- Responsiv -->
     <link rel="stylesheet" href="../assets/css/responsiv.css">
     <title>Regestrieren</title>
+
+    <?php
+        include_once "../helper/sessionStart.php"
+    ?>
+    
 </head>
 
 
