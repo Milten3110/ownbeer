@@ -1,4 +1,4 @@
-Projekt Status: 2% 
+Projekt Status: 5% 
 
 Webseiten Name : "ownbeer"
 
@@ -41,14 +41,14 @@ Bilder durch Nutzerinteraktion anzeigen lassen 					[]
 ##################
 Datenbank
 
-SQL-DB mit min 5 Tables 							[]
-incl verknüpfung, min 3 ebenen 							[]
+SQL-DB mit min 5 Tables 							[x]
+incl verknüpfung, min 3 ebenen 							[x-teilweilse]
 
 ###################
 PHP
 
 dynamischer Seitenaufbau 							[-InBearbeitung]
-häufige seiteninhalte in php auslagern und einbinden 				[]
+häufige seiteninhalte in php auslagern und einbinden 				[-InBearbeitung]
 Daten aus DB lesen 								[-InBearbeitung]
 Daten in DB schreiben 								[-InBearbeitung]
 Suche durch PHP min 3 parameter							[]
