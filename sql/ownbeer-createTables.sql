@@ -1,6 +1,6 @@
-#database
-create database ownbeer;
-use ownbeer;
+--database
+--create database ownbeer;
+--use ownbeer;
 
 create table benutzer(
 	id int NOT NULL auto_increment,
@@ -37,8 +37,8 @@ create table product(
     price float,
     category int NOT NULL,
     primary key (id)
-    #foreign key (id) references orders(products),
-    #foreign key (id) references shoppingcart(products)
+    --foreign key (id) references orders(products),
+    --foreign key (id) references shoppingcart(products)
 );
 
 create table category(
@@ -48,7 +48,7 @@ create table category(
     alc float,
     manufactuerer varchar(255),
     primary key(id)
-    #foreign key (id) references product(category)
+    --foreign key (id) references product(category)
 );
 
     
