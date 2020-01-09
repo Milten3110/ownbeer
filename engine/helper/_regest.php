@@ -11,6 +11,7 @@
     $geschlecht =   $_POST['geschlecht'];   
     
     //  Int, 0 = false, 1 = true
+    //  Setzung der Parameter
     $starkbier  =   isset($_POST['stark'])  ? 1 : 0;
     $weissbier  =   isset($_POST['weiss'])  ? 1 : 0;
     $kellerbier =   isset($_POST['keller']) ? 1 : 0;

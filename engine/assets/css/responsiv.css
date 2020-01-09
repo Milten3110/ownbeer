@@ -3,6 +3,19 @@
     body {
         background-color: beige;
     }
+
+    /*Warapper Classe */
+
+    .img_formation{
+        height: 100px;
+        margin: auto;
+    }
+
+    /*Text ändern*/
+    #inf_01_lbl::after{
+        content: "Für den Sommer!";
+    }
+
 }
 
 /*Desktop-Responsiv*/
@@ -10,4 +23,36 @@
     body {
         background-color: burlywood;
     }
+
+    .img_formation{
+        height: 250px;
+        margin: 4em;
+    }
+
+    /*Text ändern*/
+    #inf_01_lbl::after{
+        content: "Vertraut und immernoch DASS für den kommenden Sommer !";
+    }
+
+    .information{
+        margin-left: 5em;
+    }
+
+
+}
+
+/*Beschreibung der Standart Seiten*/
+.information{
+    display: flex;
+}
+
+.information div:only-child {
+    margin-top: 2em;
+    background-color: aliceblue;
+    border: solid black;
+}
+
+/*Für die Informationstexte der Produkte auf der Startseite*/
+.info_text{
+    text-align: center;
 }

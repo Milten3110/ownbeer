@@ -87,9 +87,15 @@
     //insert
     //$db->query("insert into benutzer (userName,userPw,email,shoppingcart,orders) values ('andy', 123, 'qqq@a.de', 1, 1)");
     
+
+    // TODO: fehler behebn test datensätzte in die Datenbank einpflegen
+
     // abfrage
-    $temp = $db->query("select * from benutzer where userName='" . $username . "' and userPw='" . $userpw . "'");
-    $temp = $temp->fetch_assoc();
+    $temp = $db->query("select * from user where userName='" . $username . "' and userPw='" . $userpw . "'");
+    if($temp){
+        echo var_dump(($temp));
+        $temp = $temp->fetch_assoc();
+    }
 
     $_SESSION['userName'] = $temp['userName'];
     //echo 'Hallo ' . $_SESSION['userName'];
