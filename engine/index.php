@@ -11,79 +11,42 @@
 
     <body>
     
-    <!-- NavBar -->
+    <!-- NavBar 
+        TODO: NavBar umarbeiten so dass einzelstehende Html/Php elemente sind
+        Bad: momentan via Php html elemente erzeugens
+    -->
+
     <div class="navBar">
         <?php
             include "./helper/sessionStart.php";
             include "./helper/navBar.php";
+            //include "./helper/db_conn.php"; // test rauswerfen dannach
         ?>
     </div>
 
     
-    <!-- Informationen zu den Aktuellen angeboten-->
-    <div class="information">
-
-        <div>
-            <span class="info_text01">
-                <p id="inf_01_lbl"></p>
-            </span>
-            <img class="img_formation" src="assets/bilder/astra-radler.jpg" alt="Astra Radler-Bier">
+    <!-- Wilkommenstexte -->
+    <div id="home" >
+        <div id="txt_bannerWillkommen">
+            <p>Willkommen bei OwnBeer</p>
         </div>
 
-    </div>
-
-    <div class="information">
-        <div>
+        <div class="homeSpicker">
             <span>
-                <p id="inf_02_lbl"></p>
-                <img class="img_formation" src="assets/bilder/canadian.jpg" alt="Canadian Bier">
+                Wir haben etwas neues für Ihren Genuss !
             </span>
-        </div>
+
+            <span>
+                Wir haben etwas neues für Ihren Genuss !
+            </span>
+        </div> 
     </div>
     
-    <div class="information">
-        <div>
-            <span>
-                <p id="inf_03_lbl"></p>
-                <img class="img_formation" src="assets/bilder/faxe-startkbier.jpg" alt="Stark Bier Faxe">
-            </span>
-        </div>
-    </div>
 
-    <div class="information">
-        <div>
-            <span>
-                <p id="inf_04_lbl"></p>
-                <img class="img_formation" src="assets/bilder/guinnes.jpg" alt="Guinnes Bier">
-            </span>
-        </div>
-    </div>
 
-    <div class="information">
-        <div>
-            <span>
-                <p id="inf_05_lbl"></p>
-                <img class="img_formation" src="assets/bilder/paulaner-Weizen.jpg" alt="Paulaner Hefe-Weizen">
-            </span>
-        </div>
-    </div>
 
-    <div class="information">
-        <div>
-            <span>
-                <p id="inf_06_lbl"></p>
-                <img class="img_formation" src="assets/bilder/pilsenerUrquell-Pils.jpg" alt="Urquell Pilsener">
-            </span>
-        </div>
-    </div>
-    
-    <div class="information">
-        <div>
-            <span>
-                <p id=""></p>
-                <img class="img_formation" src="" alt="">
-            </span>
-        </div>
-    </div>
+
+
+
     </body>
 </html>

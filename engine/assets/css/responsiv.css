@@ -1,7 +1,7 @@
 /*Mobile-Responsiv*/
 @media screen and (max-width: 992px) {
     body {
-        background-color: beige;
+        background-color: rgb(170, 170, 130);
     }
 
     /*Warapper Classe */
@@ -13,8 +13,24 @@
 
     /*Text ändern*/
     #inf_01_lbl::after{
-        content: "Für den Sommer!";
+        content: "Der Sommer!";
     }
+    #inf_02_lbl::after{
+        content: "Der Canadier";
+    }
+    #inf_03_lbl::after{
+        content: "Der Vikinger";
+    }
+    #inf_04_lbl::after{
+        content: "Sei Irish";
+    }
+    #inf_05_lbl::after{
+        content: "Die Natur";
+    }
+    #inf_06_lbl::after{
+        content: "DIe Urquelle";
+    }
+
 
 }
 
@@ -31,28 +47,82 @@
 
     /*Text ändern*/
     #inf_01_lbl::after{
-        content: "Vertraut und immernoch DASS für den kommenden Sommer !";
+        content: "DASS für den kommenden Sommer !";
+    }
+    #inf_02_lbl::after{
+        content: "Der Canadier in dir.";
+    }
+    #inf_03_lbl::after{
+        content: "Der Vikinger an deiner Seite.";
+    }
+    #inf_04_lbl::after{
+        content: "Sei Irish, wie es andere sind!";
+    }
+    #inf_05_lbl::after{
+        content: "Die Natur genießen.";
+    }
+    #inf_06_lbl::after{
+        content: "Erlebe die Urquelle Hautnah";
     }
 
     .information{
         margin-left: 5em;
     }
 
+    .eingabeDerProdukteSyle{
+        margin-left: 20px;
+        width: 330px;
+        margin-bottom: 3px;
+    }
 
 }
+
+/*
+***************************************************************************************
+***************************************************************************************
+*/
 
 /*Beschreibung der Standart Seiten*/
 .information{
     display: flex;
+    flex-wrap: wrap;
 }
 
-.information div:only-child {
+.information div {
     margin-top: 2em;
-    background-color: aliceblue;
-    border: solid black;
+    background-color: rgba(9, 154, 212, 0.719);
+    border: solid rgb(9, 155, 212);
+    border-radius: 20px;
+    align-items: flex-start;
+    margin-inline: 10px;    
 }
 
 /*Für die Informationstexte der Produkte auf der Startseite*/
 .info_text{
     text-align: center;
+}
+
+.img_formation{
+    border-radius: 20px;
+}
+
+.inf_text{
+    text-align: center;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeSpicker span{
+    align-items: center;
+    
+    margin-inline: 40px;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 400px;
+    background-color: rgba(27, 134, 233, 0.808);
+    
 }

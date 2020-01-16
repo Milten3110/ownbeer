@@ -151,6 +151,12 @@
                     //##############################################################################
                     //##############################################################################
                     //##############################################################################
+                    include "db_conn.php";
+                    $db = openDatabaseConnection();
+                    
+    
+                    $db->query("insert into user (userName, userPw, email, shoppingcart_id, name, surename,) values ('$userName','$userPw1','$userEmail1',2,'$vorname','$nachname')");
+                    
 
                     
                 }

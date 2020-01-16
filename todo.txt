@@ -1,5 +1,10 @@
 #Sessions
 Sessions erstellen und Handeln		[x]
 Session Anmeldung			[x]
-Session Kontackt 			[]
+
+
+#CSS
+
+#Php
+xhttpRquest mittels Kaufen, in den Warenkrop in die session 
 

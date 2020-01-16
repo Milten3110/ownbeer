@@ -15,6 +15,9 @@
 
                 if(include "../helper/_islogged.php"){
                     echo "<span>" . 'Hier stehen Ihre Produkte drinnen' .  "</span>";
+
+                    //call php script der die Produkte im Wahrenkorp anzeigt
+                    
                 }
                 else{
                     echo "<span>" . 'Sie Sind nicht angemeldet !!' .  "</span>";
