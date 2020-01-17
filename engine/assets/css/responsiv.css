@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 /*Mobile-Responsiv*/
 @media screen and (max-width: 992px) {
     body {
@@ -32,7 +44,20 @@
     }
 
 
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Desktop-Responsiv*/
 @media screen and (min-width: 993px) {
@@ -75,7 +100,67 @@
         margin-bottom: 3px;
     }
 
+    /*NavigationsBar Text Init*/
+    #lblStartseite::after{
+        content: "Start";
+        margin-left: 10px;
+    }
+
+    #lblEvents::after{
+        content: "Events";
+        margin-left: 10px;
+    }
+
+    #lblProdukte::after{
+        content: "Produkte";
+        margin-left: 10px;
+    }
+
+    #lblAngebote::after{
+        content: "Angebote";
+        margin-left: 10px;
+    }
+
+    #lblWarenkorb::after{
+        content: "Warenkorb";
+        margin-left: 10px;
+    }
+
+    #lblKontackt::after{
+        content: "Kontackt";
+        margin-left: 10px;
+    }
+
+    /*Hier iwie was machen dass nach den anmelden bereits angebeldet ist und hier
+    abmelden steht
+    */
+    #lblAnmelden::after{
+        content: "Anmelden";
+        margin-left: 10px;
+    }
+
+    #lblRegestrieren::after{
+        content: "Regestrieren";
+        margin-left: 10px;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 ***************************************************************************************
@@ -110,19 +195,21 @@
     text-align: center;
 }
 
-.home{
+/*Neue Navbar, mit HoverEffeckt und 3D simulation, der versuch*/
+#navBar{
     display: flex;
-    flex-wrap: wrap;
+    background-color: rgba(32, 98, 184, 0.712);
+    border-radius: 10px;
+    margin-inline: auto;
+
 }
 
-.homeSpicker span{
-    align-items: center;
-    
-    margin-inline: 40px;
-    margin-left: 10px;
-    border-radius: 20px;
-    padding: 10px;
-    width: 400px;
-    background-color: rgba(27, 134, 233, 0.808);
-    
+#navBar div{
+    margin-inline: auto;
 }
+
+#navBar div:hover{
+    background-color: rgba(32, 98, 184, 0.931);
+    border-radius: 10px;
+}   
+

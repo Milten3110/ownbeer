@@ -25,21 +25,39 @@
     </div>
 
     
-    <!-- Wilkommenstexte -->
-    <div id="home" >
-        <div id="txt_bannerWillkommen">
-            <p>Willkommen bei OwnBeer</p>
+    <!-- NavBar-->
+    <div id="navBar">
+        <div>
+            <p id="lblStartseite"></p>
         </div>
 
-        <div class="homeSpicker">
-            <span>
-                Wir haben etwas neues für Ihren Genuss !
-            </span>
+        <div>
+            <p id="lblEvents"></p>
+        </div>        
+        
+        <div>
+            <p id="lblProdukte"></p>
+        </div>        
+        
+        <div>
+            <p id="lblAngebote"></p>
+        </div>        
+        
+        <div>
+            <p id="lblWarenkorb"></p>
+        </div>        
+        
+        <div>
+            <p id="lblKontackt"></p>
+        </div>        
+        
+        <div>
+            <p id="lblAnmelden"></p>
+        </div>
 
-            <span>
-                Wir haben etwas neues für Ihren Genuss !
-            </span>
-        </div> 
+        <div>
+            <p id="lblRegestrieren"></p>
+        </div>
     </div>
     
 
@@ -49,4 +67,10 @@
 
 
     </body>
+
+    <footer>
+        <div>
+            <p>Impressum</p>
+        </div>
+    </footer>
 </html>
