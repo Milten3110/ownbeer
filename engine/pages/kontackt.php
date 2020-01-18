@@ -16,9 +16,43 @@
         <!-- NavBar , auslagern da für die restlichen Seiten == -->
         <div class="navBar">
             <?php
-                include "../helper/navBar.php"
             ?>
         </div>
+
+            <!-- NavBar-->
+    <div id="navBar">
+        <div>
+            <p id="lblStartseite"><a href="../index.php">Startseite</a></p>
+        </div>
+
+        <div>
+            <p id="lblEvents"><a href="events.php">Events</a></p>
+        </div>        
+        
+        <div>
+            <p id="lblProdukte"><a href="produkte.php">Produkte</a></p>
+        </div>        
+        
+        <div>
+            <p id="lblAngebote"><a href="angebote.php">Angebote</a></p>
+        </div>        
+        
+        <div>
+            <p id="lblWarenkorb"><a href="warenkorp.php">Warenkorb</a></p>
+        </div>        
+        
+        <div>
+            <p id="lblKontackt"><a href="">Kontackt</a></p>
+        </div>        
+        
+        <div>
+            <p id="lblAnmelden"><a href="anmelden.php">Anmelden</a></p>
+        </div>
+
+        <div>
+            <p id="lblRegestrieren"><a href="regestrieren.php">Regestrieren</a></p>
+        </div>
+    </div>
 
         <h1>KontacktFormular</h1>
 
@@ -53,4 +87,11 @@
             <input type="submit" value="Weiter">
         </form>
     </body>
+
+
+    <footer>
+        <div>
+            <p>Impressum</p>
+        </div>
+    </footer>
 </html>

@@ -10,7 +10,7 @@
     </head>
 
     <body>
-    
+
     <!-- NavBar 
         TODO: NavBar umarbeiten so dass einzelstehende Html/Php elemente sind
         Bad: momentan via Php html elemente erzeugens
@@ -19,7 +19,6 @@
     <div class="navBar">
         <?php
             include "./helper/sessionStart.php";
-            include "./helper/navBar.php";
             //include "./helper/db_conn.php"; // test rauswerfen dannach
         ?>
     </div>
@@ -28,35 +27,35 @@
     <!-- NavBar-->
     <div id="navBar">
         <div>
-            <p id="lblStartseite"></p>
+            <p id="lblStartseite"><a href="">Startseite</a></p>
         </div>
 
         <div>
-            <p id="lblEvents"></p>
+            <p id="lblEvents"><a href="./pages/events.php">Events</a></p>
         </div>        
         
         <div>
-            <p id="lblProdukte"></p>
+            <p id="lblProdukte"><a href="./pages/produkte.php">Produkte</a></p>
         </div>        
         
         <div>
-            <p id="lblAngebote"></p>
+            <p id="lblAngebote"><a href="./pages/angebote.php">Angebote</a></p>
         </div>        
         
         <div>
-            <p id="lblWarenkorb"></p>
+            <p id="lblWarenkorb"><a href="./pages/warenkorp.php">Warenkorb</a></p>
         </div>        
         
         <div>
-            <p id="lblKontackt"></p>
+            <p id="lblKontackt"><a href="./pages/kontackt.php">Kontackt</a></p>
         </div>        
         
         <div>
-            <p id="lblAnmelden"></p>
+            <p id="lblAnmelden"><a href="./pages/anmelden.php">Anmelden</a></p>
         </div>
 
         <div>
-            <p id="lblRegestrieren"></p>
+            <p id="lblRegestrieren"><a href="./pages/regestrieren.php">Regestrieren</a></p>
         </div>
     </div>
     

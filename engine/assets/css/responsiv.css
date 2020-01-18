@@ -1,20 +1,38 @@
+/*Root Elemente*/
 
+/*LinkControll*/
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:active{
+    color: black;
+    text-decoration: none;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
 
+/*Impressum Positionieren*/
+footer{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    font-size: 12px;
+}
 
-
-
-
-
-
+body{
+    background-image: url("../bilder/bierGB2.png"); 
+    background-repeat: initial;
+    background-size: cover;
+}
 
 
 
 
 /*Mobile-Responsiv*/
 @media screen and (max-width: 992px) {
-    body {
-        background-color: rgb(170, 170, 130);
-    }
 
     /*Warapper Classe */
 
@@ -44,7 +62,40 @@
     }
 
 
+        /*NavigationsBar Text Init*/
+    #lblStartseite{
+        visibility: hidden;
+    }
+    #lblEvents{
+        visibility: hidden;
+    }
 
+    #lblProdukte{
+        visibility: hidden;
+    }
+
+    #lblAngebote{
+        visibility: hidden;
+    }
+
+    #lblWarenkorb{
+        visibility: hidden;
+    }
+
+    #lblKontackt{
+        visibility: hidden;
+    }
+
+    /*Hier iwie was machen dass nach den anmelden bereits angebeldet ist und hier
+    abmelden steht
+    */
+    #lblAnmelden{
+        visibility: hidden;
+    }
+
+    #lblRegestrieren{
+        visibility: hidden;
+    }
 }
 
 
@@ -61,10 +112,6 @@
 
 /*Desktop-Responsiv*/
 @media screen and (min-width: 993px) {
-    body {
-        background-color: burlywood;
-    }
-
     .img_formation{
         height: 250px;
         margin: 4em;
@@ -100,51 +147,10 @@
         margin-bottom: 3px;
     }
 
-    /*NavigationsBar Text Init*/
-    #lblStartseite::after{
-        content: "Start";
-        margin-left: 10px;
-    }
-
-    #lblEvents::after{
-        content: "Events";
-        margin-left: 10px;
-    }
-
-    #lblProdukte::after{
-        content: "Produkte";
-        margin-left: 10px;
-    }
-
-    #lblAngebote::after{
-        content: "Angebote";
-        margin-left: 10px;
-    }
-
-    #lblWarenkorb::after{
-        content: "Warenkorb";
-        margin-left: 10px;
-    }
-
-    #lblKontackt::after{
-        content: "Kontackt";
-        margin-left: 10px;
-    }
-
-    /*Hier iwie was machen dass nach den anmelden bereits angebeldet ist und hier
-    abmelden steht
-    */
-    #lblAnmelden::after{
-        content: "Anmelden";
-        margin-left: 10px;
-    }
-
-    #lblRegestrieren::after{
-        content: "Regestrieren";
-        margin-left: 10px;
-    }
-
-
+    #navBar div:hover{
+        background-color: rgba(32, 98, 184, 0.931);
+        border-radius: 10px;
+    }  
 }
 
 
@@ -201,15 +207,13 @@
     background-color: rgba(32, 98, 184, 0.712);
     border-radius: 10px;
     margin-inline: auto;
-
 }
 
 #navBar div{
     margin-inline: auto;
+    width: 100px;
+    text-align: center;
 }
 
-#navBar div:hover{
-    background-color: rgba(32, 98, 184, 0.931);
-    border-radius: 10px;
-}   
+ 
 

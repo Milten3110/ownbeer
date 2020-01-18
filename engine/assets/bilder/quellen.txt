@@ -1,2 +1,8 @@
-[astra-radler,canaidan,faxe-starkbier,guinnes,paulaner-Weizen,pilsenerUrquell-Pils]
+1: [astra-radler,canaidan,faxe-starkbier,guinnes,paulaner-Weizen,pilsenerUrquell-Pils]
 www.drink-shop.ch/de
+
+2: [bierBG]
+https://www.amazon.de/Original-RAHMENLOS%C2%AE-Blechschild-jammert-einfach/dp/B07814F592
+
+3:[bierBG2]
+https://www.stern.de/genuss/trinken/kann-bier-ablaufen---und-schlecht-werden--7961092.html
