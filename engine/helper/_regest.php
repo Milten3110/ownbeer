@@ -153,9 +153,10 @@
                     //##############################################################################
                     include "db_conn.php";
                     $db = openDatabaseConnection();
-                    
-    
-                    $db->query("insert into user (userName, userPw, email, shoppingcart_id, name, surename,) values ('$userName','$userPw1','$userEmail1',2,'$vorname','$nachname')");
+
+                    $md5HashPw = md5($userPw1);
+                    // ShoppingCard ID wird vergeben wen das 1 mal etwas in den einkaufswagen getan wird
+                    $db->query("insert into user (userName, userPw, email, name, surename) values ('$userName','$md5HashPw','$userEmail1','$vorname','$nachname')");
                     
 
                     

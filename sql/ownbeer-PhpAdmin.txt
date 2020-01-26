@@ -1,0 +1,72 @@
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+
+CREATE DATABASE if not exists `ownbeer` ;
+USE `ownbeer` ;
+
+
+CREATE TABLE IF NOT EXISTS `ownbeer`.`shoppingcart` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `userID` INT NOT NULL,
+  `productID` INT NOT NULL,
+  PRIMARY KEY (`id`)
+	);
+
+
+CREATE TABLE IF NOT EXISTS `ownbeer`.`user` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `userName` VARCHAR(255) NOT NULL,
+  `userPw` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `shoppingCart` INT NULL,
+  `boughtID` INT NULL,
+  `shoppingcart_id` INT NULL,
+  `name` VARCHAR(255) NULL,
+  `surename` VARCHAR(255) NULL,
+  `birthday` DATE NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE IF NOT EXISTS `ownbeer`.`orders` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `userID` INT NOT NULL,
+  `timeStamps` TIMESTAMP NOT NULL,
+  `productID` INT NULL,
+  `user_id` INT NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+CREATE TABLE IF NOT EXISTS `ownbeer`.`Categories` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `catDESC` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE IF NOT EXISTS `ownbeer`.`product` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `pName` VARCHAR(255) NOT NULL,
+  `price` FLOAT NOT NULL,
+  `category` VARCHAR(100) NOT NULL,
+  `size` FLOAT NOT NULL,
+  `alc` FLOAT NOT NULL,
+  `manufacturer` VARCHAR(255) NOT NULL,
+  `Categories_id` INT NOT NULL,
+  `shoppingcart_id` INT NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE IF NOT EXISTS `ownbeer`.`orders_has_product` (
+  `orders_id` INT NOT NULL,
+  `product_id` INT NOT NULL,
+  PRIMARY KEY (`orders_id`, `product_id`)
+);
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+

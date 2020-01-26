@@ -8,6 +8,10 @@
     </head>
 
     <body>
+        <noscript>
+            <h1 class="noJsTxt">Sie verwenden kein JavaScript!</h1>
+        </noscript>
+
         <!-- Menue -->
         <div>
             <?php
@@ -42,7 +46,28 @@
         </div>        
         
         <div>
-            <p id="lblAnmelden"><a href="anmelden.php">Anmelden</a></p>
+            <p id="lblAnmelden">
+                <a href= 
+                        <?php 
+                            if(isset($_SESSION['userName']) && $_SESSION['userName'] != ""){
+                                echo './abmelden.php';
+                            }
+                            else{
+                                echo './anmelden.php'; 
+                            }
+                            
+                        ?> 
+                    > 
+                    <?php 
+                        if(isset($_SESSION['userName']) && $_SESSION['userName'] != ""){
+                            echo 'Abmelden';
+                        }
+                        else{
+                            echo 'Anmelden'; 
+                        }
+                    ?>
+                </a>
+            </p>
         </div>
 
         <div>

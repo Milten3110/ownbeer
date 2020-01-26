@@ -2,23 +2,32 @@
 
 /*LinkControll*/
 a:visited{
-    color: black;
+    color: white;
+    font-family: serif;
+    font-size: 18px;
     text-decoration: none;
 }
 a:active{
-    color: black;
+    color: white;
     text-decoration: none;
+    font-family: sans-serif;
+    font-size: 25px;
+
+
 }
 a:link{
-    color: black;
+    color: white;
     text-decoration: none;
+    font-size: 18px;
+
+    
 }
 
 /*Impressum Positionieren*/
 footer{
     position: absolute;
     left: 50%;
-    top: 90%;
+    bottom: 1em;
     font-size: 12px;
 }
 
@@ -27,6 +36,92 @@ body{
     background-repeat: initial;
     background-size: cover;
 }
+
+.noJsTxt{
+    text-align: center;
+    color: red;
+}
+
+
+/*AnordnugnsLayout Grob*/
+.cssWraper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cssWraper div{
+    margin-inline: auto;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 500px;
+
+    border-radius: 20px;
+    background-color: rgb(223, 221, 221);
+}
+
+.cssWraper p {
+    text-align: center;
+}
+
+/*Bilder in InformationsTexten*/
+.imgBox{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.firstInformationText{
+    text-align: center;
+    color: white;
+    font-size: 29px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+
+.txtNichtangemeldet{
+    text-align: center;
+    color: red;
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -42,22 +137,22 @@ body{
     }
 
     /*Text ändern*/
-    #inf_01_lbl::after{
+    #inf_astra_lbl::after{
         content: "Der Sommer!";
     }
-    #inf_02_lbl::after{
+    #inf_canadian_lbl::after{
         content: "Der Canadier";
     }
-    #inf_03_lbl::after{
+    #inf_faxe_lbl::after{
         content: "Der Vikinger";
     }
-    #inf_04_lbl::after{
+    #inf_guinnes_lbl::after{
         content: "Sei Irish";
     }
-    #inf_05_lbl::after{
+    #inf_paulaner_lbl::after{
         content: "Die Natur";
     }
-    #inf_06_lbl::after{
+    #inf_urquell_lbl::after{
         content: "DIe Urquelle";
     }
 
@@ -118,22 +213,22 @@ body{
     }
 
     /*Text ändern*/
-    #inf_01_lbl::after{
+    #inf_astra_lbl::after{
         content: "DASS für den kommenden Sommer !";
     }
-    #inf_02_lbl::after{
+    #inf_canadian_lbl::after{
         content: "Der Canadier in dir.";
     }
-    #inf_03_lbl::after{
+    #inf_faxe_lbl::after{
         content: "Der Vikinger an deiner Seite.";
     }
-    #inf_04_lbl::after{
+    #inf_guinnes_lbl::after{
         content: "Sei Irish, wie es andere sind!";
     }
-    #inf_05_lbl::after{
+    #inf_paulaner_lbl::after{
         content: "Die Natur genießen.";
     }
-    #inf_06_lbl::after{
+    #inf_urquell_lbl::after{
         content: "Erlebe die Urquelle Hautnah";
     }
 
@@ -204,7 +299,9 @@ body{
 /*Neue Navbar, mit HoverEffeckt und 3D simulation, der versuch*/
 #navBar{
     display: flex;
-    background-color: rgba(32, 98, 184, 0.712);
+    background-color: rgba(0, 0, 0, 0.877);
+    /*background-color: rgba(32, 98, 184, 0.712); */
+    
     border-radius: 10px;
     margin-inline: auto;
 }
@@ -215,5 +312,50 @@ body{
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*##################################################################################################################*/
+/*##################################################################################################################*/
+/*##################################################################################################################*/
+
+/*              Hier werden jetzt die Einzelnen Elemente einer Seite dargestellt                                    */
+
+/*Produkte*/
  
+.produktBox:hover{
+    background-color: rgba(9, 154, 212, 0.822);
+}
+
+/*Warenkorp*/
+
+.warenkorb{
+    margin-top: 1em;
+}
+
+.tableWarenKorp{
+    background-color: whitesmoke;
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tableWarenKorp th, td{
+    padding-left: 1em;
+    padding-inline: 7em;
+    padding-right: 1em;
+    text-align: center;
+}
+
 

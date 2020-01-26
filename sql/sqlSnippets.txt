@@ -1,0 +1,12 @@
+#Producte
+insert into product (alc,category,manufacturer,pName,price,size) values(3.9,"Starkbier","Aldi","Guinnes",1.99,0.8);
+
+insert into product (alc,category,manufacturer,pName,price,size) values(5.3,"Mixgetränk","Privat Brauerei","Astra",0.89,0.3);
+
+insert into product (alc,category,manufacturer,pName,price,size) values(4.0,"Pils","VikingBearCorp","faxe",1.49,1);
+
+insert into product (alc,category,manufacturer,pName,price,size) values(5.3,"Pils","GigFacktory","urquell",0.79,0.33);
+
+insert into product (alc,category,manufacturer,pName,price,size) values(3.3,"Weizen","Paulaner Brauerei","paulaner",0.99,0.33);
+
+insert into product (alc,category,manufacturer,pName,price,size) values(6.3,"Fassbier","Canaidan Inc","canadian",1.11,0.33);

@@ -7,6 +7,14 @@
     </head>
 
     <body>
+        <?php
+            include "../helper/sessionStart.php";
+        ?>
+
+        <noscript>
+            <h1 class="noJsTxt">Sie verwenden kein JavaScript!</h1>
+        </noscript>
+
         <!-- Menue -->
         <!-- NavBar-->
         <div id="navBar">
@@ -35,36 +43,67 @@
             </div>        
                 
             <div>
-                <p id="lblAnmelden"><a href="anmelden.php">Anmelden</a></p>
-            </div>
-
+            <p id="lblAnmelden">
+                <a href= 
+                        <?php 
+                            if(isset($_SESSION['userName']) && $_SESSION['userName'] != ""){
+                                echo './abmelden.php';
+                            }
+                            else{
+                                echo './anmelden.php'; 
+                            }
+                            
+                        ?> 
+                    > 
+                    <?php 
+                        if(isset($_SESSION['userName']) && $_SESSION['userName'] != ""){
+                            echo 'Abmelden';
+                        }
+                        else{
+                            echo 'Anmelden'; 
+                        }
+                    ?>
+                </a>
+            </p>
+        </div>
             <div>
                 <p id="lblRegestrieren"><a href="regestrieren.php">Regestrieren</a></p>
             </div>
-        </div>
-        <div>
-            <?php
-                include "../helper/sessionStart.php";
-
-                if(include "../helper/_islogged.php"){
-                    //echo "<span>" . 'Hier stehen Ihre Produkte drinnen' .  "</span>";
-
-                    //call php script der die Produkte im Wahrenkorp anzeigt
-                    
-                }
-                else{
-                    //echo "<span>" . 'Sie Sind nicht angemeldet !!' .  "</span>";
-                }
-            ?>
         </div>
 
 
         
         <!-- Warenkorp -->
-        <div>
+        <!-- Tabelle -->
+        <div class="warenkorb">
+            <!-- Php For aufgbauend-->
+            <?php
+            if(!isset($_SESSION['userName']) && $_SESSION['userName'] == ""){
+                echo "<h2 class='txtNichtangemeldet'>Sie sind nicht Angemeldet, melden Sie sich an!</h2>";
+            }
+            
+            else{
+                echo  "<table class='tableWarenKorp'>
+                    <tr>
+                        <th> Produkte </th>
+                        <th> Preis </th>
+                        <th> Anzahl </th>
+                        <th> Gesamtpreis </th>
+                        <th> Optionen </th>
+                    </tr>
+                        ";
+
+                    for($index = 0; $index < 10; ++$index){
+                         echo "<tr><td>" . $index . "</td></tr>";
+                        }  
+                    echo "</table>";
+                }
+            ?>
 
         </div>
         
+
+        <p>kaufen</p>
     </body>
 
 

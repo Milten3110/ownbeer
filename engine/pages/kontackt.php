@@ -13,51 +13,76 @@
     </head>
 
     <body>
-        <!-- NavBar , auslagern da für die restlichen Seiten == -->
-        <div class="navBar">
-            <?php
-            ?>
-        </div>
+        <noscript>
+            <h1 class="noJsTxt">Sie verwenden kein JavaScript!</h1>
+        </noscript>
 
             <!-- NavBar-->
-    <div id="navBar">
-        <div>
-            <p id="lblStartseite"><a href="../index.php">Startseite</a></p>
+        <div id="navBar">
+            <div>
+                <p id="lblStartseite"><a href="../index.php">Startseite</a></p>
+            </div>
+
+            <div>
+                <p id="lblEvents"><a href="events.php">Events</a></p>
+            </div>        
+
+            <div>
+                <p id="lblProdukte"><a href="produkte.php">Produkte</a></p>
+            </div>        
+
+            <div>
+                <p id="lblAngebote"><a href="angebote.php">Angebote</a></p>
+            </div>        
+
+            <div>
+                <p id="lblWarenkorb"><a href="warenkorp.php">Warenkorb</a></p>
+            </div>        
+
+            <div>
+                <p id="lblKontackt"><a href="">Kontackt</a></p>
+            </div>        
+
+            <div>
+                <p id="lblAnmelden">
+                    <a href= 
+                            <?php 
+                                if(isset($_SESSION['userName']) && $_SESSION['userName'] != ""){
+                                    echo './abmelden.php';
+                                }
+                                else{
+                                    echo './anmelden.php'; 
+                                }
+
+                            ?> 
+                        > 
+                        <?php 
+                            if(isset($_SESSION['userName']) && $_SESSION['userName'] != ""){
+                                echo 'Abmelden';
+                            }
+                            else{
+                                echo 'Anmelden'; 
+                            }
+                        ?>
+                    </a>
+                </p>
+            </div>
+
+            <div>
+                <p id="lblRegestrieren"><a href="regestrieren.php">Regestrieren</a></p>
+            </div>
         </div>
 
-        <div>
-            <p id="lblEvents"><a href="events.php">Events</a></p>
-        </div>        
-        
-        <div>
-            <p id="lblProdukte"><a href="produkte.php">Produkte</a></p>
-        </div>        
-        
-        <div>
-            <p id="lblAngebote"><a href="angebote.php">Angebote</a></p>
-        </div>        
-        
-        <div>
-            <p id="lblWarenkorb"><a href="warenkorp.php">Warenkorb</a></p>
-        </div>        
-        
-        <div>
-            <p id="lblKontackt"><a href="">Kontackt</a></p>
-        </div>        
-        
-        <div>
-            <p id="lblAnmelden"><a href="anmelden.php">Anmelden</a></p>
-        </div>
 
-        <div>
-            <p id="lblRegestrieren"><a href="regestrieren.php">Regestrieren</a></p>
-        </div>
-    </div>
 
+
+
+
+    
         <h1>KontacktFormular</h1>
 
         <!-- TODO : VALID eingaben-->
-        <form action="kontackt2.php" method="post">
+        <form action="" method="post">
             <label>
                 Vornamen
                 <input name="vorname" type="text" placeholder="vornamen">
@@ -84,7 +109,31 @@
                 <input type="text" placeholder="firmennamen">
             </label>
 
-            <input type="submit" value="Weiter">
+            <label>
+                Rückruf
+                <input type="radio" name="kontacktArt">
+                <input type="text" placeholder="nummer">
+            </label>
+            
+            <label>
+                Email
+                <input type="radio" name="kontacktArt">
+                <input type="text" placeholder="email">
+            </label>
+            
+            <label>
+                Brief
+                <input type="radio" name="kontacktArt">
+                <input type="text" placeholder="stadt">
+            </label>
+
+
+            <label>
+                Teilen Sie uns bitte Ihr Anliegen mit
+                <input type="text" placeholder="Ihr Anliegen">
+            </label>
+
+            <input type="submit" value="Absenden">
         </form>
     </body>
 

@@ -75,6 +75,8 @@
         }
     }
 
+    $md5HashPw = md5($userpw);
+
 
     //  Login Session Start !!
     ######################################################################################
@@ -91,7 +93,7 @@
     // TODO: fehler behebn test datensätzte in die Datenbank einpflegen
 
     // abfrage
-    $temp = $db->query("select * from user where userName='" . $username . "' and userPw='" . $userpw . "'");
+    $temp = $db->query("select * from user where userName='" . $username . "' and userPw='" . $md5HashPw . "'");
     if($temp){
         echo var_dump(($temp));
         $temp = $temp->fetch_assoc();

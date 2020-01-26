@@ -1,7 +1,13 @@
 <?php
     // Anpassen !
-    $user = "root";
-    $password = "newPw";
+    // PC und Laptop haben unterschiedliche User dadurch doppel belegung
+
+
+    //$user = "root";
+    $user = "andy";
+    //$password = "newPw";
+    $password = "andy3110";
+    
     $database = "ownbeer";
     $dbServer = "localhost";
 
@@ -9,8 +15,8 @@
 
     
     function openDatabaseConnection(){
-        $user = "root";
-        $password = "newPw";
+        $user = "andy";
+        $password = "andy3110";
         $database = "ownbeer";
         $dbServer = "localhost";
     
