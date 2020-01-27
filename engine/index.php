@@ -12,6 +12,7 @@
     <body>
         <?php
             include "./helper/sessionStart.php";
+
         ?>
         <noscript>
             <h1 class="noJsTxt">Sie verwenden kein JavaScript!</h1>

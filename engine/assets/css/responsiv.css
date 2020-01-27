@@ -233,7 +233,8 @@ body{
     }
 
     .information{
-        margin-left: 5em;
+        margin-left: 8%;
+        align-items: center;
     }
 
     .eingabeDerProdukteSyle{

@@ -73,12 +73,15 @@
                 <p id="lblRegestrieren"><a href="regestrieren.php">Regestrieren</a></p>
             </div>
         </div>
-
-        <form action="../helper/add_produktInWarenKorb.php" method="POST">
+        
+        <!--../helper/add_produktInWarenKorb.php -->
+        <form action="" method="POST">
         
         <!-- Informationen zu den Aktuellen angeboten-->
             <?php
                 include "../helper/db_conn.php";
+                include "../helper/addDel_produktInWarenKorb.php";
+
                 $db = openDatabaseConnection();
                 $result = $db->query("select * from product");
                 
@@ -90,17 +93,37 @@
                             <span>
                                 <p id='inf_" . $row->pName . "_lbl', class='inf_text'></p>
                                 <img class='img_formation' src='../assets/bilder/". $row->pName .".jpg' alt='Stark Bier Faxe'>
-                                <noscript><button class='btmInWarenKorb'>Kaufen</button></noscript>
+                                <noscript><button name='". $row->pName . "' class='btmInWarenKorb'>Kaufen</button></noscript>
                             </span>
                         </div>";
                 }
                 echo "</div>";
 
                 $result->free_result();
+
+                //  Produkte Hinzufügen und auf der Seite Bleiebn
+                if(array_key_exists('guinnes', $_POST)) { 
+                    //call function 
+                    addProdukt('guinnes');
+                } 
+                else if(array_key_exists('astra', $_POST)) { 
+                    addProdukt('astra');
+                }
+                else if(array_key_exists('faxe', $_POST)) { 
+                    addProdukt('faxe');
+                }
+                else if(array_key_exists('urquell', $_POST)) { 
+                    addProdukt('urquell');
+                }
+                else if(array_key_exists('paulaner', $_POST)) { 
+                    addProdukt('paulaner');
+                }
+                else if(array_key_exists('canadian', $_POST)) { 
+                    addProdukt('canadian');
+                }
             ?>
 
         </form>
-
         
     </body>
 
