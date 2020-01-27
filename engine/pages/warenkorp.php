@@ -120,18 +120,21 @@
                                     <td> 
                                         <form action='#' method='POST'>
                                             <button name='add".$row->pName."'>One Add</button> 
-                                            <button name='del'>One Del</button> 
+                                            <button name='del".$row->pName."'>One Del</button> 
                                         </form>
                                     </td>
                                 </tr>";
 
                                 if(array_key_exists('add'. $row->pName, @$_POST)) { 
-                                    //call function 
-                                    if(@$_SESSION[$row->pName] > 0){
-                                        @$_SESSION[$row->pName] += 1;
-                                        header('Location:warenkorp.php');
-                                    }
+                                    @$_SESSION[$row->pName] += 1;
+                                    header('Location:warenkorp.php');
                                 } 
+                                else if(array_key_exists('del'.$row->pName,@$_POST)){
+                                    if(@$_SESSION[$row->pName] > 0){
+                                        @$_SESSION[$row->pName] -=1;
+                                        header('Location: warenkorp.php');
+                                    }
+                                }
                             } 
                             @$gesamtPreis += ($row->price * $_SESSION[$row->pName]); 
                         }
@@ -145,12 +148,10 @@
             ?>
 
         </div>
-        
-
-        <p>kaufen</p>
+    
     </body>
 
-
+    <!-- FOOTER NOCH BUGGER DURCH CSS-->
     <footer>
         <div>
             <p>Impressum</p>
