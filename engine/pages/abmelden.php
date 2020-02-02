@@ -1,14 +1,4 @@
 <?php
-    session_start();
     session_destroy();
-    echo 'Erfolgreich abgemeldet';
-
-    sleep(2);
-    header("Location: ../")
-
+    header("Location: index.php?p=home")
 ?>
-
-<!DOCTYPE html>
-<html>
-
-</html>

@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-
-    </head>
-
-    <body>
-        
-        <h1>Seite Nicht gefunden !</h1>
-    </body>
-</html>
+<?php
+    echo "<h1>". '404, Seite nicht gefunden !' ."</h1>"
+?>

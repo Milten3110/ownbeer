@@ -1,173 +1,71 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta lang="de">
-    <!-- Responsiv -->
-    <link rel="stylesheet" href="../assets/css/responsiv.css">
-    <title>Regestrieren</title>
-
-    <?php
-        include_once "../helper/sessionStart.php"
-    ?>
-    
-</head>
-
-
-<body>
-    <!-- NavBar , auslagern da für die restlichen Seiten == -->
-    <noscript>
-        <h1 class="noJsTxt">Sie verwenden kein JavaScript!</h1>
-    </noscript>
-
-
-        <!-- NavBar-->
-        <div id="navBar">
-        <div>
-            <p id="lblStartseite"><a href="../index.php">Startseite</a></p>
-        </div>
-
-        <div>
-            <p id="lblEvents"><a href="events.php">Events</a></p>
-        </div>        
+<!-- Rausgefunden dass ich nciht extra echo machen muss, für das einfügen von anderen html elementen-->
+<form action="../helper/_regest.php" method="post">
+    <!-- Benötigte Informationen zum Regestrieren-->
+    <label>Benutzernamen</label>
+    <input name="userName" type="text" placeholder="0">
+    <label>Passwort
+        <input type="password" name="userPw1" placeholder="passwort">
+    </label>
+    <label>Passwort wiederholen
+        <input type="password" name="userPw2" placeholder="passwort">
+    </label>
+    <label>Email Adresse
+        <input type="text" name="userEmail1" placeholder="email">
+    </label>
+    <label>Email Adresse wiederholen
+        <input type="text" name="userEmail2" placeholder="email">
+    </label>
+  <br> <br> <br>
+    <!-- Persönliche Informationen -->
+    <label>Vornamen
+        <input type="text" name="vorname" placeholder="vornamen">
+    </label>
+    <label>Nachnamen
+        <input type="text" name="nachname" placeholder="rufname">
+    </label>
+    <br> <br> <br>
+    <!-- Geschlecht -->
+    <label>Geschlecht
+        <select name="geschlecht">
+            <option value="1"     >Neutral</option>
+            <option value="1"    >Männlich</option>
+            <option value="1"    >Weiblich</option>
+        </select>
+    </label>
+    <br> <br> <br>
+    <!-- Produktvorlieben -->
+    <div>
+        <Span>Vorlieben</Span>
+        <br>
         
-        <div>
-            <p id="lblProdukte"><a href="produkte.php">Produkte</a></p>
-        </div>        
+        <label>
+            <input type="checkbox" name="stark"> Starkbier
+        </label>
+        <label>
+            <input type="checkbox" name="weiss"> Weißbier
+        </label>
+            <input type="checkbox" name="keller"> Kellerbier
+        </label>
         
-        <div>
-            <p id="lblAngebote"><a href="angebote.php">Angebote</a></p>
-        </div>        
+        <label>
+            <input type="checkbox" name="fass"> Fassbier
+        </label>
         
-        <div>
-            <p id="lblWarenkorb"><a href="warenkorp.php">Warenkorb</a></p>
-        </div>        
+        <label>
+            <input type="checkbox" name="pils"> Pils
+        </label>
+        <label>
+            <input type="checkbox" name="dunkel"> Dunkelbier
+        </lable>
+            
+        <label>
+            <input type="checkbox" name="weizen"> Weizenbier
+        </label>
+        <label>        
+            <input type="checkbox" name="fest"> Festbier
+        </label>
         
-        <div>
-            <p id="lblKontackt"><a href="kontackt.php">Kontackt</a></p>
-        </div>        
-        
-        <div>
-            <p id="lblAnmelden">
-                <a href= 
-                        <?php 
-                            if(isset($_SESSION['userName']) && $_SESSION['userName'] != ""){
-                                echo './abmelden.php';
-                            }
-                            else{
-                                echo './anmelden.php'; 
-                            }
-                            
-                        ?> 
-                    > 
-                    <?php 
-                        if(isset($_SESSION['userName']) && $_SESSION['userName'] != ""){
-                            echo 'Abmelden';
-                        }
-                        else{
-                            echo 'Anmelden'; 
-                        }
-                    ?>
-                </a>
-            </p>
-        </div>
-
-        <div>
-            <p id="lblRegestrieren"><a href="">Regestrieren</a></p>
-        </div>
+        <label>       
+            <input type="checkbox" name="mixery"> Mixery Bier
+        </label>
     </div>
-
-
-    <form action="../helper/_regest.php" method="post">
-        <!-- Benötigte Informationen zum Regestrieren-->
-        <label>Benutzernamen</label>
-        <input name="userName" type="text" placeholder="0">
-
-        <label>Passwort
-            <input type="password" name="userPw1" placeholder="passwort">
-        </label>
-        <label>Passwort wiederholen
-            <input type="password" name="userPw2" placeholder="passwort">
-        </label>
-
-        <label>Email Adresse
-            <input type="text" name="userEmail1" placeholder="email">
-        </label>
-        <label>Email Adresse wiederholen
-            <input type="text" name="userEmail2" placeholder="email">
-        </label>
-
-      <br> <br> <br>
-
-        <!-- Persönliche Informationen -->
-        <label>Vornamen
-            <input type="text" name="vorname" placeholder="vornamen">
-        </label>
-
-        <label>Nachnamen
-            <input type="text" name="nachname" placeholder="rufname">
-        </label>
-
-        <br> <br> <br>
-
-        <!-- Geschlecht -->
-        <label>Geschlecht
-            <select name="geschlecht">
-                <option value="1"     >Neutral</option>
-                <option value="1"    >Männlich</option>
-                <option value="1"    >Weiblich</option>
-            </select>
-        </label>
-
-        <br> <br> <br>
-        <!-- Produktvorlieben -->
-        <div>
-            <Span>Vorlieben</Span>
-
-            <br>
-            
-            <label>
-                <input type="checkbox" name="stark"> Starkbier
-            </label>
-            <label>
-                <input type="checkbox" name="weiss"> Weißbier
-            </label>
-                <input type="checkbox" name="keller"> Kellerbier
-            </label>
-            
-            <label>
-                <input type="checkbox" name="fass"> Fassbier
-            </label>
-            
-            <label>
-                <input type="checkbox" name="pils"> Pils
-            </label>
-            <label>
-                <input type="checkbox" name="dunkel"> Dunkelbier
-            </lable>
-                
-            <label>
-                <input type="checkbox" name="weizen"> Weizenbier
-            </label>
-
-            <label>        
-                <input type="checkbox" name="fest"> Festbier
-            </label>
-            
-            <label>       
-                <input type="checkbox" name="mixery"> Mixery Bier
-            </label>
-        </div>
-
-
-        <!-- Regestrierung abschicken -->
-        <input type="submit">
-    </form>
-</body>
-
-
-<footer>
-        <div>
-            <p>Impressum</p>
-        </div>
-    </footer>
-</html>

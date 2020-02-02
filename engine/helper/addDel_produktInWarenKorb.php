@@ -32,12 +32,14 @@
     //}
 
 
+    //
     //@ notiz unterdrücken 
-    function addProdukt($pName){
-        @$_SESSION["$pName"] += 1;
+    function addProdukt($pId){
+        @$_SESSION[".$pId."] += 1;
     }
 
     function delProdukt($pName){
         @$_SESSION["$pName"] -=1;
     }
+
 ?>

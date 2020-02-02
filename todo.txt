@@ -1,10 +1,12 @@
-#Sessions
-Sessions erstellen und Handeln		[x]
-Session Anmeldung			[x]
-
-
 #CSS
+mobile ansicht
 
-#Php
-xhttpRquest mittels Kaufen, in den Warenkrop in die session 
+#JS
+ajax
+
+#PHP
+umstrukturieren für den warenkorb -_> funktionbreak durch anderen aufbau & abfrage
+
+'Documentation
+./pages/dokumentation.php
 

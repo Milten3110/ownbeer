@@ -86,8 +86,7 @@
     ######################################################################################
 
     include "./db_conn.php";
-    //insert
-    //$db->query("insert into benutzer (userName,userPw,email,shoppingcart,orders) values ('andy', 123, 'qqq@a.de', 1, 1)");
+    $db = openDatabaseConnection();
     
 
     // TODO: fehler behebn test datensätzte in die Datenbank einpflegen
@@ -100,12 +99,8 @@
     }
 
     $_SESSION['userName'] = $temp['userName'];
-    //echo 'Hallo ' . $_SESSION['userName'];
-    // navbar Nach dem zuweisen aufrufen !!!
-    // include_once "./navBar.php";
     
     header("Location: ../")
-    //echo var_dump($rs);
 
 ?>
 
